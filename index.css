@@ -43,7 +43,7 @@
             transition-delay: 0.2s;
             transform:translateY(110px);
             transform:reflect(1, 0);
-             display: ; /* Keeps the container tight around the table */
+            /* Keeps the container tight around the table */
   
   /* Creates the reflection below, with a 2px gap, fading out using a gradient */
  
