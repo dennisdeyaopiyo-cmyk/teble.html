@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: rgb(237, 235, 235);
+        }
+        h1 {
+            box-shadow: inset 0px 0px 10px 4px rgb(46, 221, 15) ;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            color: rgb(46, 221, 15);
+        }
+        h1:hover {
+            transition: 0.5s;
+            transform: scale(1.1);
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.2s;
+            cursor: pointer;
+            box-shadow: 0px 0px 100px 4px rgb(46, 221, 15);
+        }
+        table {
+            
+
+        
+             transform: translateX(110px);
+            align-items: center;
+            text-align: center;
+            box-shadow: 0px 0px 10px 4px rgb(46, 221, 15);
+            
+            width: 400px;
+            height: 200px;
+            justify-content: center;
+            display: table;
+            border: 2px solid rgb(118, 197, 45);
+           
+            border-radius: 10px;
+        }
+        table:hover {
+            transition: 0.5s;
+            transform: scale(1.1);
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.2s;
+            transform:translateY(110px);
+            transform:reflect(1, 0);
+             display: ; /* Keeps the container tight around the table */
+  
+  /* Creates the reflection below, with a 2px gap, fading out using a gradient */
+ 
+            
+            cursor: pointer;
+            
+            
+        
+            
+            box-shadow: 0px 0px 100px 4px rgb(46, 221, 15);
+            border: 2px solid rgb(118, 197, 45);
+        }
+        td {
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0px 0px 10px 4px rgb(46, 221, 15);
+            font-synthesis-style: inherit;
+            font-weight: 600;
+            text-align: center;
+            vertical-align: middle;
+            color: rgb(46, 221, 15);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Table</h1>
+
+    <table >
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+            <td rowspan="3">D</td>
+            <td colspan="2">E</td>
+            <td>F</td>
+         </tr>
+
+        <tr>
+           <td>C</td>
+           <td rowspan="2">G</td> 
+           <td rowspan="2">H</td>
+           <td rowspan="2">I</td>
+        </tr>
+
+        <tr> 
+            <td colspan="2">J</td>
+        </tr>
+
+        <tr>
+        <td colspan="3">K</td>  
+        <td>L</td>  
+        <td colspan="2">M</td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
