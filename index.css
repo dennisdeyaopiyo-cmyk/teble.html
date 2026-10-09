@@ -17,7 +17,31 @@
             cursor: pointer;
             box-shadow: 0px 0px 100px 4px rgb(46, 221, 15);
         }
-input[type="text"] {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .input-btn{
+            margin-top: 80px;
+
+        }
+
+        input[type="button"]:hover {
+            transition: 0.5s;
+            transform: scale(1.1);
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.2s;
+            cursor: pointer;
+            box-shadow: 0px 0px 100px 4px rgb(46, 221, 15);
+        }
+
+        input[type="button"] {
+            cursor: pointer;
     font-weight: bold;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -25,8 +49,33 @@ input[type="text"] {
     color: rgb(46, 221, 15);
             background-color: rgb(0, 0, 0);
             width: 200px;
-            height: 30px;
-            border-radius: 5px;
+            height: 50px;
+            border-radius: 20px;
+            border: 2px solid rgb(118, 197, 45);
+            box-shadow: 0px 0px 10px 4px rgb(46, 221, 15);
+            margin-bottom: 20px;
+            padding: 5px;
+        }
+        
+        
+
+        label {
+        font-family: Arial, sans-serif;
+            color: rgb(46, 221, 15);
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        input[type="text"] {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+    color: rgb(46, 221, 15);
+            background-color: rgb(0, 0, 0);
+            width: 250px;
+            height: 50px;
+            border-radius: 20px;
             border: 2px solid rgb(118, 197, 45);
             box-shadow: 0px 0px 10px 4px rgb(46, 221, 15);
             margin-bottom: 20px;
@@ -46,7 +95,7 @@ input[type="text"] {
             
 
         
-             transform: translateX(110px);
+        
             align-items: center;
             text-align: center;
             box-shadow: 0px 0px 10px 4px rgb(46, 221, 15);
@@ -66,7 +115,7 @@ input[type="text"] {
             transform-style: preserve-3d;
             transition-timing-function: ease-in-out;
             transition-delay: 0.2s;
-            transform:translateY(110px);
+            transform:translateY(-100px);
             transform:reflect(1, 0);
             /* Keeps the container tight around the table */
   
