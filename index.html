@@ -9,48 +9,52 @@
 </head>
 
 <body>
-    <h1 id="head">Welcome to My Table People</h1>
+
     <div class="container">
-<table>
-        <tr>
-            <td rowspan="2">A</td>
-            <td>B</td>
-            <td rowspan="3">D</td>
-            <td colspan="2">E</td>
-            <td>F</td>
-        </tr>
+        <h1 id="head">Welcome to My Table People</h1>
+        <div class="user"> 
+            <input type="text" id="txt" placeholder="Username"><br>
+        </div>
 
-        <tr>
-            <td>C</td>
-            <td rowspan="2">G</td>
-            <td rowspan="2">H</td>
-            <td rowspan="2">I</td>
-        </tr>
+        <p class="para" id="par" value=""></p>
+        <table>
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td rowspan="3" id="did">D</td>
+                <td colspan="2">E</td>
+                <td>F</td>
+            </tr>
 
-        <tr>
-            <td colspan="2">J</td>
-        </tr>
+            <tr>
+                <td>C</td>
+                <td rowspan="2">G</td>
+                <td rowspan="2">H</td>
+                <td rowspan="2">I</td>
+            </tr>
 
-        <tr>
-            <td colspan="3">K</td>
-            <td>L</td>
-            <td colspan="2">M</td>
-        </tr>
+            <tr>
+                <td colspan="2">J</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">K</td>
+                <td>L</td>
+                <td colspan="2">M</td>
+            </tr>
 
 
-    </table>
-<div class="input-btn">
-    <label for="txt">Username:</label>
-    <input type="text" id="txt" placeholder="Type your username..."><br>
+        </table>
+        <div class="btnn">
 
-    <label for="btn">Click the button:</label>
-    <input type="button" value="Click Me" id="btn">
+            <label for="btn">Click the button:</label><br>
+            <input type="button" value="Click Me" id="btn">
 
-</div>
-       
+        </div>
+
     </div>
-    
-    
+
+
     <script src="main.js"></script>
 </body>
 

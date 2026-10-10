@@ -1,11 +1,12 @@
 const titler = document.querySelector("#head");
 const txt = document.querySelector("#txt");
 const btn = document.querySelector("#btn");
+const show = document.querySelector("#par")
 
-let like= 0;
+let like = 0;
 txt.addEventListener("input", () => {
-  titler.textContent  ="Hi " + txt.value + ", welcome to my website";  
-  
+  titler.textContent = "Hi " + txt.value + ", welcome to my website";
+
 });
 
 btn.addEventListener("click", () => {
@@ -13,6 +14,8 @@ btn.addEventListener("click", () => {
   btn.value = `Like (${like})`;
 });
 
-if (like == 10) {
-  alert("You have liked this 10 times!");
-}
+btn.addEventListener("click", () => {
+  if (like == 1 || like < 1) { show.textContent = txt.value + " you have liked it " + like + " time" }
+  else show.textContent = txt.value + " you have liked it " + like + " times"
+});
+
